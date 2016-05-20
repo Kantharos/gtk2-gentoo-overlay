@@ -17,7 +17,7 @@ HOMEPAGE="http://mate-desktop.org"
 
 LICENSE="GPL-2 LGPL-2 FDL-1.1"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 
 IUSE="X +mate +introspection xmp gtk3"
 
@@ -26,7 +26,7 @@ RDEPEND="dev-libs/atk:0
 	>=dev-libs/libxml2-2.4.7:2
 	gnome-base/dconf:0
 	>=gnome-base/gvfs-1.10.1:0[udisks]
-	=mate-base/mate-desktop-${MATE_BRANCH}*:0[gtk3?]
+	=mate-base/mate-desktop-${MATE_BRANCH}*:0
 	>=media-libs/libexif-0.5.12:0
 	x11-libs/cairo:0
 	x11-libs/gdk-pixbuf:2
@@ -47,6 +47,8 @@ RDEPEND="dev-libs/atk:0
 	gtk3? ( x11-libs/gtk+:3
 			dev-libs/libunique:3
 			)"
+
+#=mate-base/mate-desktop-${MATE_BRANCH}*:0[gtk3?]
 
 DEPEND="${RDEPEND}
 	!!mate-base/mate-file-manager
