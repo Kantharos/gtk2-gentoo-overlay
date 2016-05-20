@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>gtk2-gentoo-overlay</name>
+    <description lang="en">Portage Overlay for MATE 1.14 and other gtk2-based apps</description>
+    <homepage>http://github.com/Kantharos/gtk2-gentoo-overlay</homepage>
+    <source type="git">git://github.com/Kantharos/gtk2-gentoo-overlay.git</source>
+    <feed>http://github.com/Kantharos/gtk2-gentoo-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
