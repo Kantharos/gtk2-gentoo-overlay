@@ -19,7 +19,7 @@ HOMEPAGE="http://mate-desktop.org"
 
 LICENSE="GPL-2 FDL-1.1 LGPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm"
+KEYWORDS="~amd64 ~arm ~ppc ~x86"
 
 IUSE="X gtk3 +introspection startup-notification"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
