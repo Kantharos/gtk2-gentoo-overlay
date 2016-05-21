@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -19,7 +19,7 @@ IUSE="gtk3"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 
 COMMON_DEPEND=">=dev-python/pygobject-2.15.1:2[${PYTHON_USEDEP}]
 	>=dev-python/pygtk-2.13:2[${PYTHON_USEDEP}]
@@ -27,13 +27,15 @@ COMMON_DEPEND=">=dev-python/pygobject-2.15.1:2[${PYTHON_USEDEP}]
 
 RDEPEND="${COMMON_DEPEND}
 	${PYTHON_DEPS}
-	>=mate-base/mate-panel-1.12:0[gtk3?]
+	>=mate-base/mate-panel-1.12:0
 	!gtk3? ( x11-libs/gdk-pixbuf:2[introspection]
 		x11-libs/gtk+:2[introspection]
 	)
 	gtk3? ( >=x11-libs/gtk+-3.0:3 )
 	virtual/libintl:0
 	!!x11-misc/mate-menu-editor"
+
+#>=mate-base/mate-panel-1.12:0[gtk3?]
 
 DEPEND="${COMMON_DEPEND}
 	>=dev-util/intltool-0.40:*
